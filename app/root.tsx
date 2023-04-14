@@ -2,6 +2,7 @@ import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import {
   Links,
   LiveReload,
+  Meta,
   Outlet,
   isRouteErrorResponse,
   useRouteError,
@@ -55,7 +56,7 @@ function Document({
   return (
     <html lang="en">
       <head>
-        <meta charSet="utf-8" />
+        <Meta />
         <title>{title}</title>
         <Links />
       </head>
