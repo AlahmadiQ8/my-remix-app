@@ -92,7 +92,7 @@ export default function JokesIndexRoute() {
     <div>
       <p>Here's a random joke:</p>
       <p>{data.randomJoke.content}</p>
-      <Link to={data.randomJoke.id}>
+      <Link to={data.randomJoke.id} prefetch="intent">
         "{data.randomJoke.name}" Permalink
       </Link>
     </div>
